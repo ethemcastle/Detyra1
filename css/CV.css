@@ -1,0 +1,30 @@
+.left {
+    width: 30%;
+    background-color: #050f33;
+    color: white;
+    font-family: "Helvetica";
+    padding: 3%;
+}
+
+.right {
+    width: 70%;
+    padding: 5%;
+
+}
+
+.d-flex {
+    height: 100vh;
+    width: 100%;
+    color: #00091a;
+}
+
+/*h5 {*/
+/*    width: 60%;*/
+/*    padding-right: 10px;*/
+/*    margin-right: 0;*/
+/*}*/
+
+
+h3 {
+    color: #ff7474;
+}

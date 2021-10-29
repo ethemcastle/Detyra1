@@ -1,0 +1,17 @@
+.container {
+  margin: 10% 0 0 0;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th{
+  background-color: grey;
+  cursor: pointer;
+}
+
+a {
+  color: black !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  display: inline-block !important;
+
+}

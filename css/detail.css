@@ -1,0 +1,23 @@
+.image, .short-details {
+    margin-top: 10%;
+    width: 49%;
+    /*text-align: center;*/
+    /*align-items: center;*/
+}
+
+.image img {
+    width: 90%;
+}
+
+.amount input {
+    width: 50px;
+}
+
+.amount, .short-description, .category {
+    margin-top: 10%;
+}
+
+.amount span button{
+    width: 20%;
+    float: right;
+}

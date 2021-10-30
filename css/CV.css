@@ -2,7 +2,6 @@
     width: 30%;
     background-color: #050f33;
     color: white;
-    font-family: "Helvetica";
     padding: 3%;
 }
 
@@ -18,12 +17,10 @@
     color: #00091a;
 }
 
-/*h5 {*/
-/*    width: 60%;*/
-/*    padding-right: 10px;*/
-/*    margin-right: 0;*/
-/*}*/
-
+.container {
+    width: 50% !important;
+    font-family: "Calibri";
+}
 
 h3 {
     color: #ff7474;

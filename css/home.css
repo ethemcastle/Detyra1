@@ -1,17 +1,51 @@
-.container {
-  margin: 10% 0 0 0;
+.content .image img {
+  width: 280px;
 }
 
-.table tbody tr:hover td, .table tbody tr:hover th{
-  background-color: grey;
+.product {
+  width: 300px;
+  padding: 10px;
+  border: rgba(0, 0, 0, 0.07) 3px solid;
+  margin: 30px;
+  /*text-align: center;*/
+}
+
+.product button{
+  margin-top: 10px;
+}
+
+.content {
+  padding: 200px;
+  flex: 1 1 160px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.back {
+  font-size: 20px;
+  float: right;
+}
+
+.back:hover {
   cursor: pointer;
 }
 
-a {
-  color: black !important;
-  background-color: transparent !important;
-  text-decoration: none !important;
-  width: 100% !important;
-  display: inline-block !important;
+.navbar-text:hover {
+  cursor: pointer;
+}
 
+.row {
+  display: flex;
+  width: 53%;
+  padding: 20px;
+}
+
+.row img {
+  width: 100px;
+}
+
+#message {
+  color: #ff6f6f;
+  display: none;
+  padding-bottom: 10px;
 }

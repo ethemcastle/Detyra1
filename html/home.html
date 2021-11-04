@@ -8,7 +8,8 @@
     <script src="../js/home.js"></script>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -17,38 +18,36 @@
     <title>Berti's Shop</title>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-<div class="container">
-    <div>
-        <h2 style="float: left">Dyqani i Bertit Online</h2>
-        <button type="button" style="float: right" class="btn btn-primary btn-sm"
-                data-toggle="modal" data-target="#createModal">Create Product</button>
-    </div>
-    <table class="table" id="table">
-        <thead>
-        <tr>
-            <th scope="col">Id</th>
-            <th scope="col">Name</th>
-            <th scope="col">Category</th>
-            <th scope="col">Price</th>
-            <th scope="col">Update</th>
-            <th scope="col">Delete</th>
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+<div class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text" onclick="loopProducts()" style="font-size: 18px">Home <span class="sr-only">(current)</span></span>
+            <span class="navbar-text" style="float: right; font-size: 18px" onclick="renderCheckout()">
+              Shporta
+            </span>
+            <span class="navbar-text" style="float: right; font-size: 18px" onclick="signOut()">
+            Log Out
+            </span>
+        </div>
+    </nav>
 </div>
 
 
+<div class="content"></div>
+
+
 <div class="modals">
-<!--    Create modal-->
-    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
+    <!--    Create modal-->
+    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="createModalLabel">Create Porduct</h5>
+                    <h5 class="modal-title" id="createModalLabel">Create Product</h5>
                 </div>
                 <div class="modal-body">
                     <form id="create_form">
@@ -68,14 +67,17 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="createProduct()">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="createProduct()">Save
+                        changes
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
-<!--    Update Modal-->
-    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <!--    Update Modal-->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -99,14 +101,17 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="updateProduct()">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="updateProduct()">Save
+                        changes
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 
-<!--    Delete Modal-->
-    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <!--    Delete Modal-->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -117,7 +122,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick={deleteProduct()} data-dismiss="modal">Save changes</button>
+                    <button type="button" class="btn btn-primary" onclick={deleteProduct()} data-dismiss="modal">Save
+                        changes
+                    </button>
                 </div>
             </div>
         </div>
